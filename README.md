@@ -1,6 +1,6 @@
 # Reardon's Segregation Index for Continuous Variables
 
-* Many kinds of segregation index are used for various purposes for policies and studies. While there are wide ranges of varibles to meausre an amount of segregtaion like race group, continuous values like income requires some more steps.
+* Many kinds of segregation index are used for various purposes of from policies to studies. While there are wide ranges of varibles to meausre an amount of segregtaion like race group, continuous values like income requires some more steps.
 
 * [Reardon(2011)](https://cepa.stanford.edu/sites/default/files/reardon%20&%20bischoff%20income%20inequality%20segregation%20AJS%20final.pdf), [Reardon and Bischoff(2011)](https://cepa.stanford.edu/sites/default/files/reardon%20&%20bischoff%20income%20inequality%20segregation%20AJS%20final.pdf) propsed a rank-order segregation index based on Theil index of Entropy. This index is widely accepted for practical and academic uses including [Chetty et al. 2014](https://www.nber.org/system/files/working_papers/w19843/w19843.pdf).
 
