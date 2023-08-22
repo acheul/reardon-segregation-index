@@ -1,10 +1,10 @@
 # Reardon's Segregation Index for Continuous Variables
 
-* Many kinds of segregation index are used for various purposes of from policies to studies. While there are wide ranges of varibles to meausre an amount of segregtaion like race group, continuous values like income requires some more steps.
+* Many kinds of segregation index are used for various purposes of from policies to studies. While there are a wide range of categorical variables like race group to meausre an amount of segregation, continuous values like income are also important but do not fit very well with categorical segregation index.
 
-* [Reardon(2011)](https://cepa.stanford.edu/sites/default/files/reardon%20&%20bischoff%20income%20inequality%20segregation%20AJS%20final.pdf), [Reardon and Bischoff(2011)](https://cepa.stanford.edu/sites/default/files/reardon%20&%20bischoff%20income%20inequality%20segregation%20AJS%20final.pdf) propsed a rank-order segregation index based on Theil index of Entropy. This index is widely accepted for practical and academic uses including [Chetty et al. 2014](https://www.nber.org/system/files/working_papers/w19843/w19843.pdf).
+* [Reardon(2011)](https://cepa.stanford.edu/sites/default/files/reardon%20&%20bischoff%20income%20inequality%20segregation%20AJS%20final.pdf), [Reardon and Bischoff(2011)](https://cepa.stanford.edu/sites/default/files/reardon%20&%20bischoff%20income%20inequality%20segregation%20AJS%20final.pdf) propsed a rank-order segregation index based on Theil index of the concept of Entropy. This index is widely accepted for practical and academic uses to calculate continuous value based segregation index like in [Chetty et al. 2014](https://www.nber.org/system/files/working_papers/w19843/w19843.pdf).
 
-* The proposed method to calculate the index is a bit intricate and there seems to be no good online library or code that implement the calculation. Therefore, here is one. Python codes inside ```src/segregation_index.py``` implements Rank-Order Information Theory Index of Reardon(2011).
+* The proposed method of them is a bit intricate however and there seems to be no good online library or code that implements it. Therefore, here is one. Python codes inside ```src/segregation_index.py``` implements Rank-Order Information Theory Index of Reardon(2011).
 
 * Essentials of the Index
 
@@ -36,5 +36,5 @@
 
   >> 0.7182    
   >> 0.3191
-  # areas1 is more income-way segregated than areas2.
+  # areas1 is more income-way segregated than areas2. In other words, areas2 is more mixed.
   ```
