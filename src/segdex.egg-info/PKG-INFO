@@ -1,3 +1,27 @@
+Metadata-Version: 2.1
+Name: segdex
+Version: 0.1.1
+Summary: Segregation Index
+Author-email: Jang Hyomin <seoul605.21@gmail.com>
+Project-URL: Homepage, https://github.com/acheul/reardon-segregation-index
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Sociology
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: statsmodels>=0.14.1
+Requires-Dist: numpy>=1.18.5
+Requires-Dist: pandas>=2.1.3
+Requires-Dist: scipy>=1.7.0
+
 # Reardon's Segregation Index for Continuous Variables
 
 * Many kinds of segregation index are used for various purposes of from policies to studies. While there are a wide range of categorical variables like race group to meausre an amount of segregation, continuous values like income are also important but do not fit very well with categorical segregation index.
@@ -24,8 +48,7 @@
   <br/>
 * **Use**
   ```
-  ! pip install segdex==0.1.1
-  from segdex import estimate_Hp
+  from src.segregation_index import estimate_Hp
 
   # Say, each variables are income.
   # Each inner list stands for a sector.

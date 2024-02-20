@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/segdex/__init__.py
+src/segdex/segregation_index.py
+src/segdex.egg-info/PKG-INFO
+src/segdex.egg-info/SOURCES.txt
+src/segdex.egg-info/dependency_links.txt
+src/segdex.egg-info/requires.txt
+src/segdex.egg-info/top_level.txt
+src/tests/test.py
