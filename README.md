@@ -6,7 +6,9 @@
   from segdex import estimate_Hp
 
   # Say, each variables are income.
-  # Inner lists of each area stand for sectors. Each area has three sectors in this case. How much is each area segregated by sectors in terms of income?
+  # Inner lists of each area stand for sectors.
+  # Each area has three sectors in this case.
+  # How much is each area segregated by sectors in terms of income?
   area1 = [[80, 80, 70, 70], [50, 45, 40],[20, 20, 20, 10]]
   area2 = [[80, 70, 50], [80, 70, 45, 20, 20], [40, 20, 10]]
 
