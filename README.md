@@ -6,16 +6,16 @@
   from segdex import estimate_Hp
 
   # Say, each variables are income.
-  # Each inner list stands for a sector.
-  areas1 = [[80, 80, 70, 70], [50, 45, 40],[20, 20, 20, 10]]
-  areas2 = [[80, 70, 50], [80, 70, 45, 20, 20], [40, 20, 10]]
+  # Inner lists of each area stand for sectors. Each area has three sectors in this case. How much is each area segregated by sectors in terms of income?
+  area1 = [[80, 80, 70, 70], [50, 45, 40],[20, 20, 20, 10]]
+  area2 = [[80, 70, 50], [80, 70, 45, 20, 20], [40, 20, 10]]
 
-  print(estimate_Hp(areas1))
-  print(estimate_Hp(areas2))
+  print(estimate_Hp(area1))
+  print(estimate_Hp(area2))
 
   >> 0.7182    
   >> 0.3191
-  # areas1 is more income-way segregated than areas2. In other words, areas2 is more mixed.
+  # area1 is more income-way segregated than area2. In other words, area2 is more mixed.
   ```
 
 ## Description
