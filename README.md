@@ -26,7 +26,7 @@
 
 * [Reardon(2011)](https://cepa.stanford.edu/sites/default/files/reardon%20&%20bischoff%20income%20inequality%20segregation%20AJS%20final.pdf), [Reardon and Bischoff(2011)](https://cepa.stanford.edu/sites/default/files/reardon%20&%20bischoff%20income%20inequality%20segregation%20AJS%20final.pdf) propsed a rank-order segregation index based on Theil index which is based on the concept of Entropy. This index is widely accepted for practical and academic uses to calculate continuous value based segregation index like in [Chetty et al. 2014](https://www.nber.org/system/files/working_papers/w19843/w19843.pdf).
 
-* The proposed method of them is a bit intricate however and there seems to be no good online library or code that implements it. Therefore, here is one. Python codes inside [```src/segregation_index.py```](./src/segregation_index.py) implements Rank-Order Information Theory Index of Reardon(2011).
+* The proposed method of them is a bit intricate however and there seems to be no good online library or code that implements it. Therefore, here is one. Python codes inside [```src/segdex/segregation_index.py```](./src/segdex/segregation_index.py) implements Rank-Order Information Theory Index of Reardon(2011).
 
 * Essentials of the Index
 
