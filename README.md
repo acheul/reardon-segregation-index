@@ -22,7 +22,7 @@
 
 
   <br/>
-* **Test**
+* **Use**
   ```
   from src.segregation_index import estimate_Hp
 
