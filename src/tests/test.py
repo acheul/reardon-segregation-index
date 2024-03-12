@@ -1,7 +1,7 @@
 import sys, os
 sys.path.append(os.path.dirname("../src"))
 
-from segdex import estimate_Hp
+from segindex import estimate_Hp
 
 if __name__ == "__main__":
 
