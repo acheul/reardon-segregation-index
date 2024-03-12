@@ -3,3 +3,5 @@ __test
 __setup.py
 dist
 segdex-0.1.1
+segindex-0.1.2
+segindex-0.1.3

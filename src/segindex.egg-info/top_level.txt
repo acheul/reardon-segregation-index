@@ -1,2 +1,2 @@
-segdex
+segindex
 tests

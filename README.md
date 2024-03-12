@@ -4,7 +4,7 @@
 
 ## Use
   ```python
-  ! pip install segindex==0.1.1
+  ! pip install segindex==0.1.3
   from segindex import estimate_Hp
 
   # Say, each variables are income.
