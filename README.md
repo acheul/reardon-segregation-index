@@ -1,9 +1,11 @@
 # Reardon's Segregation Index for Continuous Variables
 
+* [Repository](""https://github.com/acheul/reardon-segregation-index")
+
 ## Use
   ```python
-  ! pip install segdex==0.1.1
-  from segdex import estimate_Hp
+  ! pip install segindex==0.1.1
+  from segindex import estimate_Hp
 
   # Say, each variables are income.
   # Inner lists of each area stand for sectors.
