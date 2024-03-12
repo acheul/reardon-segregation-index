@@ -1,6 +1,6 @@
 # Reardon's Segregation Index for Continuous Variables
 
-* [Repository](""https://github.com/acheul/reardon-segregation-index")
+* [Repository]("https://github.com/acheul/reardon-segregation-index")
 
 ## Use
   ```python
