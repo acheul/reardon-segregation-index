@@ -1,10 +1,11 @@
-# Reardon's Segregation Index for Continuous Variables
+# Rank-Order Segregation Index for Continuous Variables
 
-* [Repository]("https://github.com/acheul/reardon-segregation-index")
+* [PyPI](https://pypi.org/project/segindex/)
+* [Github](https://github.com/acheul/reardon-segregation-index)
 
 ## Use
   ```python
-  ! pip install segindex==0.1.3
+  ! pip install segindex==0.1.4
   from segindex import estimate_Hp
 
   # Say, each variables are income.
@@ -34,12 +35,17 @@
 
   * The inequality index *H* is an average of each value from a total of K sectors, which is total region's entropy(*E*) minus each sector's entropy(*E_K*). It is weighted by each sector's relative popultaion size(*t_k/T*). Here the entropy stands for how equally variables(ex. income) are distributed over sectors.
 
-    <img src="./assets/eq3-5.png">
-  
+  $$ H = \Sigma_{k=1}^{K} \frac{t_{k}}{T} \frac{E-E_{k}}{E} $$
+
   * Below is an equation to calculate entropy when there is two groups. *p* is a ratio of a group. As the variable here is continuous not categorical, one needs to integrate the below equation over *p* with a range of 0≤p≤1. Thus transformation of raw values into rank ordered values is required.
   
-    <img src="./assets/eq3-6.png">
+  $$ E(p) = -(p\log_{2}^{p} + (1-p)\log_{2}^{(1-p)}) $$
 
   * Combining above equations, we can calculate below one to get a Rank-Order Information Theory Index, which is the segregation index for continuous variables. 0 means perfect equality. 1 means perfect segregation.
-  
-    <img src="./assets/eq3-7.png">
+
+  $$ H^R = \int_{0}^{1} \frac{E(p)}{\int_{0}^{1} E(q)\,dq} H(p) \,dp \\
+      = 2 \log_{2}^{\int_{0}^{1} E(p)H(p) \,dp} $$
+
+
+## Version Logs
+* `v.0.1.4`: minor modification of README file
