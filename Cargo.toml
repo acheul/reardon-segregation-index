@@ -1,0 +1,19 @@
+[workspace]
+resolver = "3"
+
+members = ["rust", "page/wasm"]
+
+[workspace.package]
+version = "0.2.0"
+edition = "2024"
+authors = ["Acheul <seoul605.21@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/acheul/reardon-segregation-index"
+keywords = ["segregation", "statistics", "inequality", "theil", "reardon"]
+categories = ["science", "mathematics"]
+readme = "./README.md"
+
+# Applies to the wasm build too; profiles on non-root members are ignored.
+[profile.release]
+opt-level = "s"
+lto = true

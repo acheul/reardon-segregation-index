@@ -1,1 +1,0 @@
-from .segregation_index import estimate_Hp

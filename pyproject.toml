@@ -1,36 +1,49 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "segindex"
-version = "0.1.3"
+version = "0.2.0"
 authors = [
   { name="Jang Hyomin", email="seoul605.21@gmail.com" },
 ]
-description = "Segregation Index"
+description = "Rank-order information theory segregation index (Reardon) for continuous variables"
 readme = "README.md"
-requires-python = ">=3.8"
+license = "MIT"
+license-files = ["LICENSE.txt"]
+keywords = ["segregation", "segregation index", "theil", "reardon", "inequality", "statistics"]
+requires-python = ">=3.9"
 
 dependencies = [
-  'statsmodels>=0.14.1',
-  'numpy >= 1.18.5',
-  'pandas>=2.1.3',
-  'scipy >= 1.7.0',
+  'numpy>=1.21',
 ]
 
 classifiers = [
-  'Development Status :: 4 - Beta',
+  'Development Status :: 5 - Production/Stable',
   'Environment :: Console',
   'Intended Audience :: Science/Research',
   'Operating System :: OS Independent',
-  'Programming Language :: Python :: 3.8',
   'Programming Language :: Python :: 3.9',
   'Programming Language :: Python :: 3.10',
   'Programming Language :: Python :: 3.11',
+  'Programming Language :: Python :: 3.12',
+  'Programming Language :: Python :: 3.13',
   'Programming Language :: Python :: 3 :: Only',
   'Topic :: Sociology'
 ]
 
 [project.urls]
 Homepage = "https://github.com/acheul/reardon-segregation-index"
+Demo = "https://acheul.github.io/reardon-segregation-index/"
+
+[tool.setuptools]
+package-dir = {"" = "python"}
+
+[tool.setuptools.packages.find]
+where = ["python"]
+exclude = ["tests*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["python"]
+testpaths = ["python/tests"]
